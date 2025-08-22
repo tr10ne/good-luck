@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Успешный Успех | Продажа успеха премиум-класса</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.12/dist/index.global.js"></script> -->
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+
+      .success-gradient {
+        background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+      }
+
+      .shine-effect {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shine-effect:after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -60%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(255, 255, 255, 0.13) 77%,
+          rgba(255, 255, 255, 0.5) 92%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(30deg);
+        transition: all 0.7s ease-out;
+      }
+
+      .shine-effect:hover:after {
+        left: 100%;
+      }
+
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(245, 87, 108, 0.7);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(245, 87, 108, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(245, 87, 108, 0);
+        }
+      }
+
+      .floating {
+        animation: floating 6s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .counter {
+        font-variant-numeric: tabular-nums;
+      }
+    </style>
+  </head>
+  <body class="gradient-bg">
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <div
+                class="success-gradient text-white font-bold text-xl px-3 py-1 rounded-lg"
+              >
+                УСПЕШНЫЙ УСПЕХ™
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+            <a
+              href="#hero"
+              class="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium"
+              >Главная</a
+            >
+            <a
+              href="#products"
+              class="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium"
+              >Продукты</a
+            >
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium"
+              >Преимущества</a
+            >
+            <a
+              href="#testimonials"
+              class="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium"
+              >Отзывы</a
+            >
+            <a
+              href="#faq"
+              class="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium"
+              >FAQ</a
+            >
+          </div>
+          <div class="flex items-center">
+            <button
+              class="success-gradient text-white px-6 py-2 rounded-full font-bold hover:opacity-90 transition duration-300 transform hover:scale-105"
+            >
+              Купить успех
+            </button>
+            <button
+              class="md:hidden ml-4 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-pink-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight"
+          >
+            <span class="success-gradient bg-clip-text text-transparent"
+              >УСПЕХ</span
+            >
+            <br />теперь доступен в упаковке
+          </h1>
+          <p class="text-xl text-gray-600">
+            Первая в мире компания, которая продает успех в удобной форме. Наши
+            клиенты достигают невозможного, пока другие только мечтают.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="success-gradient text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition duration-300 transform hover:scale-105 shine-effect"
+            >
+              Хочу успех сейчас!
+            </button>
+            <button
+              class="border-2 border-pink-500 text-pink-600 px-8 py-4 rounded-full font-bold hover:bg-pink-50 transition duration-300"
+            >
+              <i class="fas fa-play-circle mr-2"></i> Видео-презентация
+            </button>
+          </div>
+          <div class="flex items-center space-x-4 pt-4">
+            <div class="flex -space-x-2">
+              <img
+                class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/women/12.jpg"
+                alt=""
+              />
+              <img
+                class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/men/33.jpg"
+                alt=""
+              />
+              <img
+                class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/women/45.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-sm text-gray-500">
+              <span class="font-bold text-gray-700">10,842+</span> успешных
+              клиентов
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="success-gradient rounded-3xl p-1 shadow-xl floating">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Успешный человек"
+              class="rounded-2xl w-full h-auto"
+            />
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg z-10"
+          >
+            <div class="flex items-center">
+              <div class="p-2 bg-pink-100 rounded-lg">
+                <i class="fas fa-trophy text-pink-600 text-xl"></i>
+              </div>
+              <div class="ml-3">
+                <p class="text-xs text-gray-500">Гарантированный</p>
+                <p class="font-bold text-gray-800">Успех 99.9%</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-lg z-10"
+          >
+            <div class="flex items-center">
+              <div class="p-2 bg-yellow-100 rounded-lg">
+                <i class="fas fa-bolt text-yellow-600 text-xl"></i>
+              </div>
+              <div class="ml-3">
+                <p class="text-xs text-gray-500">Мгновенный</p>
+                <p class="font-bold text-gray-800">Результат</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="p-6">
+            <div
+              class="text-4xl font-bold text-pink-600 counter"
+              data-target="12895"
+            >
+              0
+            </div>
+            <div class="text-gray-500 mt-2">Довольных клиентов</div>
+          </div>
+          <div class="p-6">
+            <div
+              class="text-4xl font-bold text-pink-600 counter"
+              data-target="99"
+            >
+              0
+            </div>
+            <div class="text-gray-500 mt-2">Процент успеха</div>
+          </div>
+          <div class="p-6">
+            <div
+              class="text-4xl font-bold text-pink-600 counter"
+              data-target="42"
+            >
+              0
+            </div>
+            <div class="text-gray-500 mt-2">Наград и премий</div>
+          </div>
+          <div class="p-6">
+            <div
+              class="text-4xl font-bold text-pink-600 counter"
+              data-target="24"
+            >
+              0
+            </div>
+            <div class="text-gray-500 mt-2">Часа до результата</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          Наши
+          <span class="success-gradient bg-clip-text text-transparent"
+            >продукты</span
+          >
+          успеха
+        </h2>
+        <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+          Выберите подходящий пакет успеха для ваших амбиций
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Basic Success -->
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+        >
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-900">Базовый Успех</h3>
+            <p class="mt-2 text-gray-600">Для начинающих успешных людей</p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-gray-900">$99</span>
+              <span class="text-gray-500">/месяц</span>
+            </div>
+            <button
+              class="mt-6 w-full bg-gray-100 text-gray-800 py-3 rounded-lg font-medium hover:bg-gray-200 transition duration-300"
+            >
+              Начать с базового
+            </button>
+          </div>
+          <div class="border-t border-gray-200 px-6 py-4">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>+10% к уверенности</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>5 успешных дней в месяц</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>Базовая поддержка</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-times text-red-400 mr-2"></i>
+                <span>Премиум-достижения</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pro Success (Featured) -->
+        <div class="relative">
+          <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-3 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full"
+          >
+            ЛУЧШИЙ ВЫБОР
+          </div>
+          <div
+            class="bg-white border-2 border-pink-500 rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          >
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-900">
+                Профессиональный Успех
+              </h3>
+              <p class="mt-2 text-gray-600">Для тех, кто серьезно настроен</p>
+              <div class="mt-6">
+                <span class="text-4xl font-bold text-gray-900">$299</span>
+                <span class="text-gray-500">/месяц</span>
+              </div>
+              <button
+                class="mt-6 w-full success-gradient text-white py-3 rounded-lg font-bold hover:opacity-90 transition duration-300 shine-effect"
+              >
+                Выбрать профессионала
+              </button>
+            </div>
+            <div class="border-t border-gray-200 px-6 py-4">
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>+50% к уверенности</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>20 успешных дней в месяц</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Приоритетная поддержка</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Доступ к VIP-сообществу</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Персональный коуч успеха</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elite Success -->
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+        >
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-900">Элитный Успех</h3>
+            <p class="mt-2 text-gray-600">Для тех, кто хочет всего и сразу</p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-gray-900">$999</span>
+              <span class="text-gray-500">/месяц</span>
+            </div>
+            <button
+              class="mt-6 w-full bg-gray-100 text-gray-800 py-3 rounded-lg font-medium hover:bg-gray-200 transition duration-300"
+            >
+              Стать элитой
+            </button>
+          </div>
+          <div class="border-t border-gray-200 px-6 py-4">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>+99% к уверенности</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>30 успешных дней в месяц</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>24/7 персональная поддержка</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>Эксклюзивные возможности</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>Гарантированный успех</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Почему наш
+            <span class="success-gradient bg-clip-text text-transparent"
+              >успех</span
+            >
+            лучше?
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+            Мы переосмыслили концепцию успеха и сделали его доступным каждому
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-bolt text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Мгновенный эффект
+            </h3>
+            <p class="text-gray-600">
+              Наш успех начинает работать сразу после покупки. Никакого ожидания
+              - только результат.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-shield-alt text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Гарантия 100%</h3>
+            <p class="text-gray-600">
+              Если вы не станете успешнее в течение 30 дней, мы вернем вам
+              деньги без вопросов.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-chart-line text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Измеримый результат
+            </h3>
+            <p class="text-gray-600">
+              Наши клиенты в среднем увеличивают доход на 217% в первый год
+              использования.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-globe text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Глобальное признание
+            </h3>
+            <p class="text-gray-600">
+              Ваши достижения будут замечены во всем мире. Мы обеспечиваем
+              PR-поддержку.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-users text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Эксклюзивное сообщество
+            </h3>
+            <p class="text-gray-600">
+              Доступ к закрытому клубу успешных людей, где рождаются грандиозные
+              проекты.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="success-gradient w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-infinity text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Пожизненная поддержка
+            </h3>
+            <p class="text-gray-600">
+              Даже после окончания подписки мы продолжаем вас курировать. Ваш
+              успех - наша репутация.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 gradient-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Реальные
+            <span class="success-gradient bg-clip-text text-transparent"
+              >истории</span
+            >
+            успеха
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+            Наши клиенты уже изменили свою жизнь. Теперь ваша очередь.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Ольга С."
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Ольга С.</h4>
+                <p class="text-gray-500 text-sm">Генеральный директор</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "После покупки Профессионального Успеха моя компания выросла в 3
+              раза за полгода. Теперь все знакомые спрашивают, в чем мой
+              секрет."
+            </p>
+            <div class="mt-4 flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Дмитрий К."
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Дмитрий К.</h4>
+                <p class="text-gray-500 text-sm">Стартапер</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Купил Базовый Успех для теста. Через месяц уже перешел на
+              Элитный. Мой стартап получил инвестиции в $2M. Совпадение? Не
+              думаю."
+            </p>
+            <div class="mt-4 flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Анна М."
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Анна М.</h4>
+                <p class="text-gray-500 text-sm">Фрилансер</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "С Успешным Успехом я наконец-то поверила в себя. Мои доходы
+              выросли в 5 раз, появились клиенты из Fortune 500. Это магия!"
+            </p>
+            <div class="mt-4 flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <button
+            class="border-2 border-pink-500 text-pink-600 px-8 py-3 rounded-full font-bold hover:bg-pink-50 transition duration-300"
+          >
+            <i class="fas fa-book-open mr-2"></i> Все истории успеха
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 success-gradient text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold sm:text-4xl mb-6">
+          Готовы изменить свою жизнь?
+        </h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
+          Присоединяйтесь к тысячам успешных людей, которые уже сделали выбор в
+          пользу Успешного Успеха.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="bg-white text-pink-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shine-effect"
+          >
+            Начать сейчас
+          </button>
+          <button
+            class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:bg-opacity-10 transition duration-300"
+          >
+            <i class="fas fa-phone-alt mr-2"></i> Консультация
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Частые
+            <span class="success-gradient bg-clip-text text-transparent"
+              >вопросы</span
+            >
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+            Все, что вы хотели знать об Успешном Успехе
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                class="flex justify-between items-center w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>Как быстро я увижу результаты?</span>
+                <i
+                  class="fas fa-chevron-down text-pink-600 transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden">
+                <p class="text-gray-600">
+                  Большинство наших клиентов отмечают первые изменения уже в
+                  течение 24 часов после приобретения Успешного Успеха.
+                  Максимальный эффект достигается через 30 дней регулярного
+                  использования.
+                </p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                class="flex justify-between items-center w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>Это не развод?</span>
+                <i
+                  class="fas fa-chevron-down text-pink-600 transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden">
+                <p class="text-gray-600">
+                  Абсолютно нет! Мы работаем полностью прозрачно и предлагаем
+                  100% гарантию возврата денег, если вы не останетесь довольны
+                  результатами. Наша репутация подтверждена тысячами довольных
+                  клиентов и многочисленными наградами в индустрии.
+                </p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                class="flex justify-between items-center w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>Можно ли купить успех один раз на всю жизнь?</span>
+                <i
+                  class="fas fa-chevron-down text-pink-600 transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden">
+                <p class="text-gray-600">
+                  Успех требует постоянной работы и поддержки. Наши годовые
+                  подписки включают "пожизненный" режим после 5 лет непрерывного
+                  использования, когда основные параметры успеха закрепляются на
+                  постоянной основе.
+                </p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                class="flex justify-between items-center w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>Есть ли противопоказания?</span>
+                <i
+                  class="fas fa-chevron-down text-pink-600 transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden">
+                <p class="text-gray-600">
+                  Успешный Успех не рекомендуется людям, не готовым к изменениям
+                  в жизни. В редких случаях возможны побочные эффекты:
+                  повышенное внимание окружающих, рост доходов, неожиданные
+                  карьерные возможности.
+                </p>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                class="flex justify-between items-center w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>Как происходит доставка успеха?</span>
+                <i
+                  class="fas fa-chevron-down text-pink-600 transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden">
+                <p class="text-gray-600">
+                  После оплаты вы получаете доступ в личный кабинет с пошаговой
+                  системой активации успеха. Физическая доставка (для
+                  премиум-пакетов) осуществляется в течение 1-3 дней в
+                  элегантной упаковке, достойной вашего нового статуса.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">
+            Хватит откладывать успех на потом!
+          </h2>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Начните свой путь к выдающимся достижениям прямо сейчас.
+          </p>
+          <button
+            class="success-gradient text-white px-12 py-5 rounded-full font-bold text-lg hover:opacity-90 transition duration-300 transform hover:scale-105 pulse"
+          >
+            <i class="fas fa-gem mr-2"></i> Получить успех сегодня
+          </button>
+          <p class="mt-4 text-sm text-gray-500">
+            Гарантия возврата денег в течение 30 дней. Без риска.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Успешный Успех</h3>
+            <p class="text-gray-400">
+              Лидер в индустрии продажи успеха с 2015 года. Наши технологии
+              меняют жизни.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Продукты</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Базовый Успех</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Профессиональный</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Элитный Успех</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Корпоративные решения</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Компания</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">О нас</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Карьера</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Пресса</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Подписаться</h4>
+            <p class="text-gray-400 mb-4">
+              Получайте советы по успеху на почту
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Ваш email"
+                class="px-4 py-2 rounded-l-lg w-full text-gray-900 focus:outline-none"
+              />
+              <button class="success-gradient px-4 rounded-r-lg">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="text-gray-400 text-sm">
+            © 2023 Успешный Успех. Все права защищены.
+          </div>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Политика конфиденциальности</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Условия использования</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Юридическая информация</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // FAQ Accordion
+      document.querySelectorAll("#faq button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector("i");
+
+          content.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+
+      // Counter Animation - ИСПРАВЛЕННАЯ ВЕРСИЯ
+      function animateCounters() {
+        const counters = document.querySelectorAll(".counter");
+        let allComplete = true;
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          const current = +counter.innerText;
+          const increment = Math.ceil(target / 60); // Более плавная анимация
+
+          if (current < target) {
+            const newValue = Math.min(current + increment, target);
+            counter.innerText = newValue;
+            allComplete = false;
+          } else {
+            counter.innerText = target;
+          }
+        });
+
+        // Продолжаем анимацию только если не все счетчики завершены
+        if (!allComplete) {
+          setTimeout(animateCounters, 50);
+        }
+      }
+
+      // Start counters when section is in view
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Сбрасываем счетчики в 0 перед анимацией
+              document.querySelectorAll(".counter").forEach((counter) => {
+                counter.innerText = "0";
+              });
+              animateCounters();
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      // Исправленный селектор для секции со счетчиками
+      const statsSection = document.querySelector("section.py-16.bg-white");
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Мобильное меню (добавлена недостающая функциональность)
+      const mobileMenuButton = document.querySelector(
+        'button[class*="md:hidden"]'
+      );
+      if (mobileMenuButton) {
+        mobileMenuButton.addEventListener("click", function () {
+          // Здесь должна быть логика для открытия мобильного меню
+          console.log("Мобильное меню clicked");
+        });
+      }
+    </script>
+  </body>
+</html>
